@@ -1,0 +1,91 @@
+/* colors used:
+
+background-color: #42413C;
+light green: #A8DBA8;
+dark green: #3B8686;
+
+*/
+
+header, nav, section, article, aside, footer, video, audio {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;   
+}
+body {
+    font-family: Verdana;
+    font-size: 14px;
+    color: black;
+    background-color: #42413c;
+}
+h1, h2, p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#container {
+    margin: 0 auto;
+    width: 960px;
+    background-color: #A8DBA8; 
+}
+img {
+    float: left;
+}
+.caption {
+    text-align: right;
+    color: #666;
+    font-size: 10px;
+    font-style: italic;
+}
+#left {
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    float: left;
+    width: 570px;
+    background-color: white; 
+}
+#right {
+    padding: 5px 70px 5px 0;
+    color: white;
+    float: right;
+    margin-bottom: 10px;
+    width: 290px;
+    height: 827px;
+    background-color: #3B8686;
+}
+#line {
+    border-top: solid 1px white;
+}
+#container h1 {
+    padding-left: 15px;
+    font-size: 62px;
+    font-family: 'Freckle Face', Verdana;
+}
+#container #left h1 {
+    padding-left: 0;
+    font-size: 36px;
+    font-family: 'Freckle Face', Verdana;
+}
+#container #left h2 {
+    font-size: 18px;
+    font-family: 'Freckle Face', Verdana;
+    color: #0b486b;
+}
+#container #right h1 {
+    padding-left: 15px;
+    font-size: 24px;
+    border-bottom: solid 1px white;
+}
+#container #right h2 {
+    padding-left: 15px;
+    font-size: 21px;
+    font-family: 'Freckle Face', Verdana;
+}
+#container #right p {
+    padding-left: 15px;
+}
+
+footer {
+    padding: 15px;
+}
