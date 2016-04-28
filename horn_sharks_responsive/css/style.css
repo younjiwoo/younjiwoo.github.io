@@ -1,0 +1,120 @@
+header, section, footer, aside, article, figure {
+	display: block;
+}
+* {
+	padding:0;
+	margin:0;
+}
+body {
+	background-color: #42413C;
+}
+h1, h2 {
+    font-family: "Freckle Face", sans-serif;
+    padding-right: 15px;
+	padding-left: 15px;
+}
+p {
+    padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom:10px;
+}
+a:link, a:visited {
+	color: #0B486B;
+	text-decoration: underline; 
+}
+a:hover, a:active { 
+	text-decoration: none;
+}
+#wrapper {
+	margin: 0 auto; 
+	background-color: #3B8686;
+}
+header {
+	background-color: #A8DBA8;
+}
+header h1 {
+    text-align: center;
+	margin: 0;
+	font-size: 62px;
+}
+article p {
+    font-size: 14px;
+    color: black;
+    line-height: 1.4em;
+    font-family: Verdana, sans-serif;
+}
+figure img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+figcaption {
+    font-size: 10px;
+    color: #666;
+    font-style: italic;
+    padding: 0 15px 0 15px;
+    text-align: center;
+}
+article {
+	background-color: #FFFFFF;
+}
+article h1 {
+	font-size: 36px;
+}
+article h2 {
+	font-size: 24px;
+	margin-bottom: 0;
+	color: #0B486B;
+}
+aside {
+	background-color: #3B8686;
+	color: #fff;
+	padding: 10px 0;
+}
+aside h1 {
+	font-size: 24px;
+	border-bottom: solid 2px #fff;
+}
+aside p {
+    font-size: 14px;
+    line-height: 1.4em;
+    font-family: Verdana, sans-serif;
+}
+footer {
+	padding: 10px 0;
+	background-color: #A8DBA8;
+}
+
+/* Large screen rules */
+@media screen and (min-width: 600px) {
+    #wrapper {
+        max-width: 960px;
+    }
+    article {
+        width: 66%;
+        display: inline-block;
+    }
+    aside {
+        width: 34%;
+        display: inline-block;
+        float: right;
+    }
+    header h1 {
+        text-align: left;
+    }
+    figcaption {
+        text-align: right;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
