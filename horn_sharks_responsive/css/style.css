@@ -48,10 +48,8 @@ figure img {
     width: 100%;
     height: auto;
 }
-figcaption {
-    font-size: 10px;
-    color: #666;
-    font-style: italic;
+figure figcaption {
+    font: italic 10px Verdana;
     padding: 0 15px 0 15px;
     text-align: center;
 }
@@ -75,7 +73,7 @@ aside h1 {
 	font-size: 24px;
 	border-bottom: solid 2px #fff;
 }
-aside p {
+aside p, footer {
     font-size: 14px;
     line-height: 1.4em;
     font-family: Verdana, sans-serif;
