@@ -38,25 +38,25 @@
                 <h2>Contact Us</h2>
                 
                 <!-- form -->
-                <form id="form-contact" action="#" method="post" autocomplete="on">
+                <form id="form-contact" action="form-parser.php" method="post" autocomplete="on">
                    
                    <fieldset id="genInfo">
                        <legend>General Information</legend>
                        <ol>
                           <li>
-                              <label for="name">Name:</label>
-                              <input type="text" name="name" title="Name" id="name" placeholder="Enter your name" pattern="[a-zA-Z ]+" autofocus />
+                              <label for="name">Name*:</label>
+                              <input type="text" name="name" title="Name" id="name" placeholder="Enter your name" pattern="[a-zA-Z ]+" autofocus required />
                           </li> 
                           <li>
-                              <label for="phone">Phone:</label>
-                              <input type="tel" name="phone" title="Phone" id="phone" placeholder="888-123-4567" pattern="[0-9]{3}[\-][0-9]{3}[-][0-9]{4}"/>
+                              <label for="phone">Phone :</label>
+                              <input type="tel" name="phone" title="Phone" id="phone" placeholder="888-123-4567" pattern="[0-9]{3}[\-][0-9]{3}[-][0-9]{4}" />
                           </li> 
                           <li>
-                              <label for="email">Email:</label>
-                              <input type="email" name="email" title="Email" id="email" placeholder="name@domain.com" />
+                              <label for="email">Email*:</label>
+                              <input type="email" name="email" title="Email" id="email" placeholder="name@domain.com" required />
                           </li>
                           <li>
-                              <label for="url">Web address:</label>
+                              <label for="url">Web address :</label>
                               <input type="url" name="url" value="https://" title="Web address" id="url" placeholder="http://www.yourdomain.com" />
                           </li>
                        </ol>
@@ -122,17 +122,16 @@
                         </ol>
                         
                         <label class="commentLabel" for="comments">Additional comments or questions:</label><br />
-                        <textarea name="comments" class="longText"></textarea>
+                        <textarea name="comments" class="longText"></textarea><br />
                         
+                        <label id="human" for="human">Type the characters you see in the picture below.</label>
+                        <img src="../images/human.jpg" alt="Type the characters you see in the picture" /><br />
+                        <input type="text" name="human" />
                         
                     </fieldset>
-                    
-
-                    
-                                        
-                                                                                
+                
         
-                    <button type="submit">Submit</button>
+                    <button name="submit" type="submit">Submit</button>
                     
                 </form>
                 <!-- end form -->

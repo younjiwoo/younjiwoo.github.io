@@ -374,6 +374,9 @@ label {
     text-align: right;
     margin-right: 4px;
 }
+label#human {
+    width: auto;
+}
 .radioBtnSet label, .dropChoice label, .checkSet label {
     width: auto;
     text-align: left;
