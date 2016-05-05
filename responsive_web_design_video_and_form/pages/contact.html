@@ -45,19 +45,19 @@
                        <ol>
                           <li>
                               <label for="name">Name*:</label>
-                              <input type="text" name="name" title="Name" id="name" placeholder="Enter your name" pattern="[a-zA-Z ]+" autofocus required />
+                              <input type="text" name="name" title="Name" id="name" placeholder="Enter your name" pattern="[a-zA-Z ]+" autofocus />
                           </li> 
                           <li>
                               <label for="phone">Phone :</label>
-                              <input type="tel" name="phone" title="Phone" id="phone" placeholder="888-123-4567" pattern="[0-9]{3}[\-][0-9]{3}[-][0-9]{4}" />
+                              <input type="tel" name="phone" title="Phone" id="phone" placeholder="888-123-4567" />
                           </li> 
                           <li>
                               <label for="email">Email*:</label>
-                              <input type="email" name="email" title="Email" id="email" placeholder="name@domain.com" required />
+                              <input type="email" name="email" title="Email" id="email" placeholder="name@domain.com" />
                           </li>
                           <li>
                               <label for="url">Web address :</label>
-                              <input type="url" name="url" value="https://" title="Web address" id="url" placeholder="http://www.yourdomain.com" />
+                              <input type="url" name="url" value="" title="Web address" id="url" placeholder="http://www.yourdomain.com" />
                           </li>
                        </ol>
                        
@@ -68,7 +68,7 @@
                        <p>Pick a monthly amount and help save a turtle today</p>
                        <ol class="radioBtnSet">
                             <li>
-                                <input type="radio" name="sponsorAmt" id="sponsorAmt5" value="5" required />
+                                <input type="radio" name="sponsorAmt" id="sponsorAmt5" value="5" />
                                 <label for="sponsorAmt5">$5</label>     
                             </li>   
                             <li>
@@ -112,11 +112,11 @@
                         <p>Sign-up for our newsletter</p>
                         <ol class="checkSet">
                             <li>
-                                <input type="checkbox" name="newsletter" id="enewsletter" value="e-newsletter" />
+                                <input type="checkbox" name="newsletter[]" id="enewsletter" value="e-newsletter " />
                                 <label for="enewsletter">e-newsletter</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="newsletter" id="pnewsletter" value="print-newsletter" />
+                                <input type="checkbox" name="newsletter[]" id="pnewsletter" value="print-newsletter " />
                                 <label for="pnewsletter">print-newsletter</label>
                             </li>
                         </ol>
@@ -126,12 +126,12 @@
                         
                         <label id="human" for="human">Type the characters you see in the picture below.</label>
                         <img src="../images/human.jpg" alt="Type the characters you see in the picture" /><br />
-                        <input type="text" name="human" />
+                        <input type="text" name="human" id="human" />
                         
                     </fieldset>
                 
         
-                    <button name="submit" type="submit">Submit</button>
+                    <button name="submit" type="submit" value="submit">Submit</button>
                     
                 </form>
                 <!-- end form -->
