@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>A Swimming Turtle</title>
+        
+        <style type="text/css">
+            #swimmingTurtle {
+                position: relative;
+            }
+            .turtleBody {
+                height: 200px;
+                width: 200px;
+                background-color: green;
+                border-radius: 200px;
+            }
+            .turtleHead {
+                height: 80px;
+                width: 80px;
+                background-color: goldenrod;
+                border-radius: 80px;
+                position: absolute;
+                top: 50px;
+                left: 170px;
+            }
+            .turtleLegs {
+                height: 30px;
+                width: 30px;
+                background-color: goldenrod;
+                border-radius: 30px;
+                position: absolute;
+            }
+            .leg1 {
+                top: 8px;
+                left: 18px;
+            }
+            .leg2 {
+                top: 3px;
+                left: 163px;
+            }
+            .leg3 {
+                top: 167px;
+                left: 7px;
+            }
+            .leg4 {
+                top: 180px;
+                left: 165px;
+            }
+            
+        </style>
+        <script src="http://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('#swimmingTurtle').animate({
+                    left:"+=300"
+                }, 1000, function() {
+                $('#swimmingTurtle').css('transform','rotate(90deg)');
+                $('#swimmingTurtle').animate({
+                        right:"+=600"
+                    }, 1000); // closes this animate
+                });  // closes animate function                 
+                
+            }); // closes doc ready function
+                
+
+        </script>
+    </head>
+    
+    <body>
+        <div id="swimmingTurtle">
+            <div class="turtleBody"></div>
+            <div class="turtleHead"></div>
+            <div class="turtleLegs leg1"></div>
+            <div class="turtleLegs leg2"></div>
+            <div class="turtleLegs leg3"></div>
+            <div class="turtleLegs leg4"></div>
+            <div class="turtleTail"></div>
+        </div>
+
+    </body>
+    
+</html>
