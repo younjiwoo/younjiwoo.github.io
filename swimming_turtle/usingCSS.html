@@ -64,6 +64,13 @@
         transform: rotate(170deg) skewX(60deg);
         z-index: 1;
     }
+    img {
+        position: absolute;
+        z-index: 15;
+        top: 8px;
+        left: 137px;
+        transform: rotate(-90deg) scale(.25);
+        }
     @keyframes swim {
           0% {
             transform: translateY(150px) translateX(0px) rotate(0deg);
@@ -96,6 +103,7 @@
             <div class="turtleLegs leg4"></div>
             <div class="turtleTail"></div>
             <div class="tail"></div>
+            <img src="eyes.png" alt="turtle's eyes" />
         </div>
 
     </body>
