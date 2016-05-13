@@ -1,0 +1,103 @@
+
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8" />
+    <title>A Swimming Turtle</title>
+
+    <style type="text/css">
+    #swimmingTurtle {
+        position: relative;
+        animation: swim 6s;
+    }
+    .turtleBody {
+        height: 200px;
+        width: 200px;
+        background-color: saddlebrown;
+        position: absolute;
+        border-radius: 200px;
+        z-index: 5;
+    }
+    .turtleHead {
+        height: 90px;
+        width: 90px;
+        background-color: darkseagreen;
+        border-radius: 80px;
+        position: absolute;
+        top: 50px;
+        left: 170px;
+        z-index: 10;
+    }
+    .turtleLegs {
+        height: 45px;
+        width: 45px;
+        background-color: darkseagreen;
+        border-radius: 30px;
+        position: absolute;
+        z-index: 1;
+    }
+    .leg1 {
+        top: 0px;
+        left: 3px;
+    }
+    .leg2 {
+        top: 3px;
+        left: 160px;
+    }
+    .leg3 {
+        top: 160px;
+        left: 0;
+    }
+    .leg4 {
+        top: 165px;
+        left: 145px;
+    }
+    .tail {
+        height: 40px;
+        width: 80px;
+        background-color: darkseagreen;
+        position: absolute;
+        top: 85px;
+        left: -20px;
+        transform: rotate(170deg) skewX(60deg);
+        z-index: 1;
+    }
+    @keyframes swim {
+          0% {
+            transform: translateY(200px) translateX(0px) rotate(0deg);
+           }
+          25% {
+            transform: translateY(250px) translateX(250px) rotate(20deg);
+          }
+          50% {
+            transform: translateY(450px) translateX(500px) rotate(10deg);
+          }
+          75% {
+            transform: translateY(50px) translateX(850px) rotate(-20deg);
+          }
+          100% {
+            transform: translateY(-170px) translateX(1200px) rotate(-40deg);
+          }
+        }
+            
+    </style>
+        
+    </head>
+    
+    <body>
+        <div id="swimmingTurtle">
+            <div class="turtleBody"></div>
+            <div class="turtleHead"></div>
+            <div class="turtleLegs leg1"></div>
+            <div class="turtleLegs leg2"></div>
+            <div class="turtleLegs leg3"></div>
+            <div class="turtleLegs leg4"></div>
+            <div class="turtleTail"></div>
+            <div class="tail"></div>
+        </div>
+
+    </body>
+    
+</html>
