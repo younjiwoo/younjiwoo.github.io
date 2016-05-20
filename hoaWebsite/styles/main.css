@@ -11,4 +11,41 @@ header, nav, section, article, aside, footer, video, audio {
 * {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
+}
+
+/*-------------------------- Index.html -----------------------*/
+
+/* Header */
+.logo {
+    display: inline-block;
+    position: absolute;
+    top: 7%;
+    left: 15%;
+}
+#navbar ul {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+#navbar ul li {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 1em;
+}
+#navbar ul li a {
+    color: #999;
+}
+#navbar ul li a:hover {
+    color: orange;
+}
+
+
+/* Slide show */
+.container {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    
 }

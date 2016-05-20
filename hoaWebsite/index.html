@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -10,9 +10,9 @@
     <!-- [if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
     <![end if]-->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/> <!-- Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="styles/main.css" type="text/css" rel="stylesheet" />
     <style type="text/css">
         .carousel-inner > .item > img,
@@ -31,6 +31,17 @@
     
     <header>
         <!--여기에 로고랑 네비게이션 -->
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">HOA</a></li>
+                <li><a href="#">Property Info</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Forms / Archives</a></li>
+            </ul>
+         </nav>
     </header>
     
     
@@ -47,19 +58,29 @@
             
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox"><!--The slides are specified in a <div> with class .carousel-inner -->
-                <div class="item active">
-                <img src=""</div>
-            </div> 
+                <div class="item active"><img src="images/1.jpg" alt="colony la paz" width="460" height="345"/></div>
+                <div class="item"><img src="images/2.jpg" alt="pool" width="460" height="345"/></div>
+                 <div class="item"><img src="images/3.jpg" alt="main entrance" width="460" height="345"/></div>
+                <div class="item"><img src="images/4.jpg" alt="pretty tree with purple flowers" width="460" height="345"/></div>
+            </div> <!-- .carousel-inner -->
             
-        </div> <!-- #myCarousel .carousel-slide ends here -->
+            <!-- Left and Right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div> <!-- #myCarousel .carousel-slide -->
     
     </div>
     <footer>
         
     </footer>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script> <!-- j.query library -->
-    <script src="#"></script>
+   
 </body>
 
 </html>
