@@ -274,8 +274,8 @@ li.rslides_here a {
 
 #popOutBox{
     position: fixed;
-    top: 20%;
-    left: 2%;
+    top: 200px;
+    left: 28px;
     z-index: 20;
 }
 #adCap {
