@@ -270,6 +270,70 @@ li.rslides_here a {
 /*------ end slide show --------*/
 
 
+/*------ pop out box --------*/
+
+#popOutBox{
+    position: fixed;
+    top: 20%;
+    left: 2%;
+    z-index: 20;
+}
+#adCap {
+    position: absolute;
+    width: 270px;
+    height: 24px;
+    text-align: center;
+    transform-origin: top left 0;
+    transform: rotate(90deg);
+    z-index: 25;
+}
+#adCap a {
+    text-decoration: none;
+    background-color: #243a6c;
+    color: white;
+    padding: 5px;
+    display: block;
+}
+#adContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: #243a6c;
+    width: 200px;
+    min-height: 250px;
+    padding: 10px;
+    border: solid 1px #ccc;
+    margin-left: -250px;
+    border-radius: 0 20px 20px 0;
+    z-index: 20;
+}
+#close {
+    text-decoration: none;
+    color: darkorange;
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    cursor: pointer;
+}
+#adContent img {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

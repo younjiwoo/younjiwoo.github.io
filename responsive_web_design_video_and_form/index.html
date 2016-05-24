@@ -37,7 +37,34 @@
           before: function(){},   // Function: Before callback
           after: function(){}     // Function: After callback
         });
-              });
+          
+        function openAd(){
+            $("#adContent").animate({
+                marginLeft: '0'
+            }, 1300);
+        };
+        
+        function closeAd(){
+            $("#adContent").animate({
+                marginLeft: '-=250px'
+            }, 1000);
+        };
+        
+        $("#close").click(function(){
+            closeAd();
+        });
+
+        $("#adCap").click(function(e){
+            openAd();
+            e.preventDefault();
+        });
+          
+        openAd();
+        
+        
+        
+          
+    });
     </script>
 </head>
     
@@ -72,9 +99,19 @@
     </ul>
 </div>  
 
+<aside id="popOutBox">
+    <div id="adCap">
+        <a href="pages/contact.html">Click here to save a turtle today.</a>
+    </div>
+    <div id="adContent">
+        <p id="close">close</p>
+        <h3>Donate and save a turtle today.</h3>
+        <p>Etiam sodales sed ex sed viverra. Aliquam ac porttitor lectus. Nulla feugiat, diam sed gravida sodales, tortor enim aliquet ligula.</p>
+        <a><img src="images/turtleIcon.gif"</a>
+    </div>
     
     
-    
+</aside>
 <main>
     <article id="article-primary">
         <h2>Save Sea Turtles</h2>
