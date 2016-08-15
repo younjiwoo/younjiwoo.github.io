@@ -2,85 +2,73 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Wanderlust's website</title>
-<style>
-    figure {
-        width: 400px;
-    }
-    img#sequoia {
-        transform: rotate(90deg);
-        width: 300px;
-    }
-    img#museum {
-        width: 300px;
-    }
-    table {
-        border: 2px solid gold;
-    }
-</style>
+<title>Younji Woo</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-	<main>
-		<header></header>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Contact Me</a></li>
-			</ul>
-		</nav>
-		<section>
-			<h2>Welcome</h2>
 
-			<p>I would love to share some of the cities that I went to...</p>
-			
-			<h2>Places I have been to this year</h2> 
-			<ol>
-                <li><a href="pages/sequoiaNP.html">Sequoia National Park</a> -- July 2016</li>
-                <li>Seattle -- March 2016</li>
-			</ol>
-            <figure>
-                <img src="images/sequoia.jpg" alt="sequoia national park" id="sequoia" />
-                <figcaption>Sequoia National Park</figcaption>
-            </figure>
-            <figure>
-                <img src="images/20160313_112950.jpg" alt="seattle museum" id="museum" />
-                <figcaption>Seattle Museum</figcaption>
-            </figure>
-            
-			
-		</section>
-		<aside>
-			<h2>Where is next?</h2>
-			<table>
-                <tr>
-                    <th>Place</th>
-                    <th>Month</th>
-                    <th>With Whom</th>
-                </tr>
-                <tr>
-                    <td>New York</td>
-                    <td>August</td>
-                    <td>Fran</td>
-                </tr>
-                <tr>
-                    <td>D.C.</td>
-                    <td>September</td>
-                    <td>Sarah</td>
-                </tr>
-                <tr>
-                    <td>Portland</td>
-                    <td>November</td>
-                    <td>Sonia</td>
-                </tr>
-            </table>
-			
-            <h2>A great travelers' blog to check out <a href="http://wetravelandblog.com" target="_blank" >here</a>!</h2>
-            <p>Q) What makes it good or bad?</p>
-            <p>A) First off, that website is responsive, so that's one of the greatest features it has. It's very visual and seems organized. One thing that makes it -- I wouldn't want to say "bad" but -- not super awesome is that it take a while to load the first page.</p>
-			
-        </aside>
-		<footer>Copyright 2016 Younji Woo</footer>
-	</main>
+<header>
+<nav id="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<main>
+<section class="parallax">
+    <h2>Welcome to Younji's website.</h2>
+    <p>I LOVE travelling and being adventurous! So, I would love to share some of the cities that I have been to.</p>
+</section>
+<section class="secondSection">
+    <h2>Here are the places I have visited so far this year:</h2> 
+    <ol id="placeList">
+        <li><a href="pages/sequoiaNP.html">Sequoia National Park</a> - July 2016</li>
+        <figure>
+        <img src="images/sequoia.jpg" alt="sequoia national park" id="sequoia" />
+        <figcaption>Sequoia National Park, California</figcaption>
+        </figure>
+        <li>Seattle - March 2016</li>
+        <figure>
+        <img src="images/seattle.jpg" alt="seattle museum" id="museum" />
+        <figcaption>Seattle Museum, Washington</figcaption>
+        </figure>
+    </ol>
+
+    <h2>Where is next?</h2>
+    <table border="2px">
+        <tr>
+            <th>Place</th>
+            <th>Month</th>
+            <th>With Whom</th>
+        </tr>
+        <tr>
+            <td>New York</td>
+            <td>August</td>
+            <td>Fran</td>
+        </tr>
+        <tr>
+            <td>D.C.</td>
+            <td>September</td>
+            <td>Sarah</td>
+        </tr>
+        <tr>
+            <td>Portland</td>
+            <td>November</td>
+            <td>Sonia</td>
+        </tr>
+    </table>
+
+    <h2>A great traveler's blog to check out <a href="http://wetravelandblog.com" target="_blank" >here</a>!</h2>
+    <p>Q) What makes it good or bad?</p>
+    <p>A) First off, that website is responsive, so that's one great feature it has. It's very visual and seems organized. One thing that makes it not super awesome is that it takes a while to load the first page.</p>
+
+</section>
+
+<footer><strong>Copyright 2016 Younji Woo</strong></footer>
+</main>
 </body>
 </html>
