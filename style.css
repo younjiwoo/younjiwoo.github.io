@@ -10,6 +10,9 @@ a {
     text-decoration: none;
     color: dodgerblue;
 }
+a:visited {
+    color: mediumslateblue;
+}
 a:hover {
     color: #ccc;
 }
@@ -26,10 +29,8 @@ a:hover {
     color: white;
     width: 100%;
     padding: .6em 0;
-    font-size: 1.5em;
     text-align: center;
     font-weight: bold;
-    font-family: monospace;
 }
 #navbar li a:hover {
     background: linear-gradient(lightgreen, mediumseagreen);
@@ -88,9 +89,9 @@ figcaption {
 table {
     border-collapse: collapse;
     width: 100%;
-    border-color: #ccc;
 }
 th, td {
+    border: 2px solid #333;
     padding: .7em;
     text-align: center;
 }
@@ -102,4 +103,5 @@ footer {
     text-align: center;
     font-size: .8em;
     margin-top: 3em;
+    font-family: cursive;
 }
