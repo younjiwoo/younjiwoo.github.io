@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     color: #333;
-    font-family: Verdana;
+    font-family: 'Lora', Verdana;
     line-height: 1.7em;
 }
 a {
@@ -16,12 +16,14 @@ a:visited {
 a:hover {
     color: #ccc;
 }
+
 /* Navigarion Bar */
 #navbar {
     background-color: #666;
     width: 100%;
 }
 #navbar li {
+    list-style-type: none;
     border-bottom: 1px solid white;
 }
 #navbar li a {
@@ -35,6 +37,10 @@ a:hover {
 #navbar li a:hover {
     background: linear-gradient(lightgreen, mediumseagreen);
 }
+a#active {
+    background: linear-gradient(lightgreen, mediumseagreen);
+}
+
 /* MAIN */
 main {
    position: relative;
@@ -43,34 +49,42 @@ main:before {
     content : "";
     display: block;
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     background-image: url(images/bg2.jpg); 
     background-attachment: fixed;  
     width: 100%;
     height: 100%;
-    opacity : 0.3;
-    z-index: -1;
-}
-
-/* BACKGROUND EFFECT */
-.parallax {
-    background-image: url(images/bg1.JPG);
-    box-shadow: 1px 3px 20px #333;
+    opacity : 0.6;
 }
 
 /* SECTION */
-section:first-child h2 {
+.firstSection h2 { /* welcome msg */
     padding: 10% .5em 10%;
 }
-section:first-child p {
+.firstSection p {
     padding: 0 .5em 20%;
 }
-.secondSection {
-    margin: 10% 0;
+.secondSection { /* contains 2 photos */
+    padding: 10% 0;
+    background-image: url(images/bg1.JPG);
+    box-shadow: 1px 3px 20px #333;
 }
-
-
+.secondSection h2 {
+    margin-bottom: 5%;
+}
+.thirdSection { /* table */
+    background-image: url(images/seattle.jpg);
+    background-attachment: fixed;
+    padding-bottom: 3em;
+}
+.thirdSection h2, .thirdSection td, .thirdSection p {
+    color: white;
+}
+.thirdSection h2 {
+    padding: 3em 0 1.5em 0;
+}
 #placeList > li {
     margin-left: 1.3em; 
 }
@@ -83,8 +97,6 @@ figcaption {
     text-align: center;
 }
 
-
-
 /* TABLE */
 table {
     border-collapse: collapse;
@@ -96,12 +108,39 @@ th, td {
     text-align: center;
 }
 
-
-
-
+/* FOOTER */
 footer {
     text-align: center;
     font-size: .8em;
     margin-top: 3em;
-    font-family: cursive;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+/*--------------- FOR LARGER SCREENS ---------------*/
+@media screen and (min-width:600px) {
+    .wrap {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    #navbar {
+        text-align: center;
+    }
+    #navbar ul li {
+        display: inline-block;
+        border: none;
+        margin: 0 1em;
+    }
+    #navbar ul li a {
+        padding: .5em 1em;
+    }
+    
+    
+    
+    
+    
 }

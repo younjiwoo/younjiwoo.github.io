@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Younji Woo</title>
+<title>Younji's website</title>
 <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"><!--google font-->
 </head>
 
 <body>
@@ -11,7 +12,7 @@
 <header>
 <nav id="navbar">
     <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#" id="active">Home</a></li>
         <li><a href="#">About Me</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
@@ -19,12 +20,15 @@
 </header>
 
 <main>
-<section class="parallax">
+<section class="firstSection">
+    <div class="wrap">
     <h2>Welcome to Younji's website.</h2>
     <p>I LOVE travelling and being adventurous! So, I would love to share some of the cities that I have been to.</p>
+    </div>
 </section>
 <section class="secondSection">
-    <h2>Here are the places I have visited so far this year:</h2> 
+    <div class="wrap">
+    <h2>Here is a list of places I have visited this year:</h2> 
     <ol id="placeList">
         <li><a href="pages/sequoiaNP.html">Sequoia National Park</a> - July 2016</li>
         <figure>
@@ -37,7 +41,10 @@
         <figcaption>Seattle Museum, Washington</figcaption>
         </figure>
     </ol>
-
+    </div>
+</section>
+<section class="thirdSection">
+    <div class="wrap">
     <h2>Where is next?</h2>
     <table>
         <tr>
@@ -61,11 +68,10 @@
             <td>Sonia</td>
         </tr>
     </table>
-
     <h2>A great traveler's blog to check out <a href="http://wetravelandblog.com" target="_blank" >here</a>!</h2>
     <p>Q) What makes it good or bad?</p>
     <p>A) First off, that website is responsive, so that's one great feature it has. It's very visual and seems organized. One thing that makes it not super awesome is that it takes a while to load the first page.</p>
-
+    </div>
 </section>
 
 <footer>Copyright 2016 Younji Woo</footer>
