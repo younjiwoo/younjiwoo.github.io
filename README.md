@@ -15,6 +15,6 @@ Homepage template found here: https://html5up.net/big-picture
 ## License
 
 My portfolio webpage is released under the MIT License.
-]]></content>
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
