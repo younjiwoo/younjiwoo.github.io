@@ -7,7 +7,7 @@ let jerryCount = 0;
 // count down
 let count = 3;
 let counter = setInterval(timer, 1000);
-function timer() {
+function timer() { // run "timer()" every second.
     if (count > 0) {
         $('.countdownBox').text(count);
     } else if (count < 0) {
@@ -24,7 +24,6 @@ function timer() {
 function restart() {
     $('.tom').animate({left: "0"}, 100);
     $('.jerry').animate({left: "0"}, 100);
-    countdown();
 };
 
 // Tom bot
