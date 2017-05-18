@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    font-family: fantasy;
+}
+header {
+    color: gray;
+    padding: .5em;
+}
+.jerry {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+.tom {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(-1);
+}
+.countDownBox {
+    width: 200px;
+    height: 200px;
+    font-size: 10em;
+    position: fixed;
+    color: salmon;
+    bottom: 50%;
+    left: 40%;
+    z-index: 500;
+}
+
