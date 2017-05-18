@@ -1,20 +1,20 @@
 # Racing Game
 
-*Short explanation of the project (1-2 sentences) - what is the goal of the project and/or main functionality?*
+This is a Racing Game, where two players can move Tom or Jerry across the browser to compete for the win.
 
 ## Technologies Used
 
-*What technologies did you use to develop this project? (bullet points)*
+jQuery, JavaScript and CSS.
 
 ## Existing Features
 
-*What features does your racing game have? (bullet points)*
+Players can move their characters (Tom and Jerry) by pressing a specific key, which is "T" and "J".
+The game keeps track of multiple game rounds with a win counter.
+It displays a countdown timer ("3, 2, 1, Go!"), the winning time, and shows who won the round.
 
 ## Planned Features
 
-*What changes would you make to your project if you continue to work on it? (bullet points)*
-
----
+I'm going to work on a bot so that a player can play against it.
 
 ##### Screenshot (optional)
 
