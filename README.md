@@ -1,20 +1,15 @@
-<snippet>
-  <content><![CDATA[
-# ${1:Younji Woo Portfolio}
+## Younji Woo's Portfolio
 
-This is my portfolio page. Here I link my projects and also offer methods of contact and a short bio.
+This is Younji's portfolio page. Here I link my projects and also offer methods of contact and a short bio.
 
-## Usage
+#### Usage
 
-Visit the address: https://younjiwoo.github.io/
+Visit the website [here](https://younjiwoo.github.io/).
 
-## Credits
+#### Credits
 
 Homepage template found here: https://html5up.net/big-picture
 
-## License
+#### License
 
 My portfolio webpage is released under the MIT License.
-</content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
