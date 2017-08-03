@@ -1,14 +1,26 @@
 let projects = [
     {
+      projectName: "KeyDR",
+      url: "https://keydr.herokuapp.com/",
+      image: "https://media.giphy.com/media/WWvqs59KEyIEM/giphy.gif",
+      description: "KeyDR is a musical game. User has to press the keys that match the notes coming down the screen."
+    },
+    {
+      projectName: "Bayrails",
+      url: "https://belle-vin-42587.herokuapp.com/",
+      image: "images/bayrailsScreenShot.png",
+      description: "A web app providing users with searchable Caltrain commuter rail schedules."
+    },
+    {
         projectName: "Swimming Turtle",
         url: "/projects/swimming_turtle/usingCSS.html",
-        image: "images/swimmingTurtle.png",
+        image: "https://media.giphy.com/media/1297wA9jS8FqVi/giphy.gif",
         description: "A swimming turtle made with pure CSS."
     },
     {
         projectName: "Music Boxes",
         url: "/projects/music_boxes/index.html",
-        image: "images/musicBoxes.png",
+        image: "https://media.giphy.com/media/lZ8yyz4xUzwrK/giphy.gif",
         description: "Google coder music box project using jQuery, HTML5 Audio tags and CSS."
     },
     {
@@ -36,9 +48,9 @@ let projects = [
         description: "A re-design of my previous HOA's website."
     }
 ];
-        
-        
-    
+
+
+
 let subtitlesArr = document.querySelectorAll('h2.subtitle');
 for (let i = 0; i < subtitlesArr.length; i++) {
     if (i !== subtitlesArr.length - 1) {
@@ -76,7 +88,7 @@ function addProjects() {
         $article.append($a);
         $gallery.append($article);
     }); // forEach ends.
-    
+
 }
 
 window.onload = function(){
