@@ -17,30 +17,30 @@ let projects = [
         image: "https://media.giphy.com/media/1297wA9jS8FqVi/giphy.gif",
         description: "A swimming turtle made with pure CSS."
     },
-    {
-        projectName: "Music Boxes",
-        url: "/projects/music_boxes/index.html",
-        image: "https://media.giphy.com/media/lZ8yyz4xUzwrK/giphy.gif",
-        description: "Google coder music box project using jQuery, HTML5 Audio tags and CSS."
-    },
-    {
-        projectName: "Horn Shark Page",
-        url: "/projects/horn_sharks_responsive/index.html",
-        image: "images/hornShark.png",
-        description: "A responsive webpage about Horn Sharks."
-    },
-    {
-        projectName: "Day and Night",
-        url: "/projects/day_and_night/index.html",
-        image: "images/dayAndNight.png",
-        description: "Change day into night and back again with the click of a mouse. Made with jQuery."
-    },
-    {
-        projectName: "Digital Clock",
-        url: "/projects/digital_clock/index.html",
-        image: "images/digitalClock.png",
-        description: "A simple digital clock using basic Javascript."
-    },
+    // {
+    //     projectName: "Music Boxes",
+    //     url: "/projects/music_boxes/index.html",
+    //     image: "https://media.giphy.com/media/lZ8yyz4xUzwrK/giphy.gif",
+    //     description: "Google coder music box project using jQuery, HTML5 Audio tags and CSS."
+    // },
+    // {
+    //     projectName: "Horn Shark Page",
+    //     url: "/projects/horn_sharks_responsive/index.html",
+    //     image: "images/hornShark.png",
+    //     description: "A responsive webpage about Horn Sharks."
+    // },
+    // {
+    //     projectName: "Day and Night",
+    //     url: "/projects/day_and_night/index.html",
+    //     image: "images/dayAndNight.png",
+    //     description: "Change day into night and back again with the click of a mouse. Made with jQuery."
+    // },
+    // {
+    //     projectName: "Digital Clock",
+    //     url: "/projects/digital_clock/index.html",
+    //     image: "images/digitalClock.png",
+    //     description: "A simple digital clock using basic Javascript."
+    // },
     {
         projectName: "HOA Website",
         url: "https://fewd1-team10.github.io/",
