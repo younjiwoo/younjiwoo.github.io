@@ -7,7 +7,7 @@ let projects = [
     },
     {
       projectName: "Bayrails",
-      url: "https://belle-vin-42587.herokuapp.com/",
+      url: "https://bayrailss.herokuapp.com/",
       image: "images/bayrailsScreenShot.png",
       description: "A web app providing users with searchable Caltrain commuter rail schedules."
     },
