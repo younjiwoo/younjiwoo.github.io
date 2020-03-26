@@ -6,17 +6,18 @@ let projects = [
       description: "KeyDR is a musical game. User has to press the keys that match the notes coming down the screen."
     },
     {
+        projectName: "Random Meal Generator",
+        url: "https://random-meal-generator.herokuapp.com/",
+        image: "images/randomMealGenerator.png",
+        description: "Get a random meal recipe."
+    },
+    {
       projectName: "Get Wixi",
       url: "https://d1fs7szu6ckwuf.cloudfront.net/",
       image: "https://media.giphy.com/media/IdgJiHQB8s0Nb07kk4/giphy.gif",
       description: "Wixi is a home network as a service."
     },
-    {
-        projectName: "Swimming Turtle",
-        url: "/projects/swimming_turtle/usingCSS.html",
-        image: "https://media.giphy.com/media/mDRgx9AkFaXlS30Y0e/giphy.gif",
-        description: "A swimming turtle made with pure CSS."
-    },
+    
     // {
     //     projectName: "Music Boxes",
     //     url: "/projects/music_boxes/index.html",
