@@ -2,19 +2,19 @@ let projects = [
     {
       projectName: "KeyDR",
       url: "https://keydr.herokuapp.com/",
-      image: "https://media.giphy.com/media/WWvqs59KEyIEM/giphy.gif",
+      image: "https://media.giphy.com/media/QyhVtIfjpDI8SYK45z/giphy.gif",
       description: "KeyDR is a musical game. User has to press the keys that match the notes coming down the screen."
     },
     {
-      projectName: "Bayrails",
-      url: "https://bayrailss.herokuapp.com/",
-      image: "images/bayrailsScreenShot.png",
-      description: "A web app providing users with searchable Caltrain commuter rail schedules."
+      projectName: "Get Wixi",
+      url: "https://d1fs7szu6ckwuf.cloudfront.net/",
+      image: "https://media.giphy.com/media/IdgJiHQB8s0Nb07kk4/giphy.gif",
+      description: "Wixi is a home network as a service."
     },
     {
         projectName: "Swimming Turtle",
         url: "/projects/swimming_turtle/usingCSS.html",
-        image: "https://media.giphy.com/media/1297wA9jS8FqVi/giphy.gif",
+        image: "https://media.giphy.com/media/mDRgx9AkFaXlS30Y0e/giphy.gif",
         description: "A swimming turtle made with pure CSS."
     },
     // {
