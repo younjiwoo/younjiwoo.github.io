@@ -7,7 +7,7 @@ let projects = [
     },
     {
         projectName: "Random Meal Generator",
-        url: "https://random-meal-generator.herokuapp.com/",
+        url: "https://magnificent-hotteok-f692c3.netlify.app/",
         image: "images/randomMealGenerator.png",
         description: "Get a random meal recipe."
     },
