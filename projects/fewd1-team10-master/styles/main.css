@@ -1,0 +1,1010 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                TABLE OF CONTENTS
+-----------------------------------------------------------
+
+    1. Project details
+    2. CSS reset
+    3. Global Styles (tags, basic styling)
+    4. Header and Nav
+    5. Main and Body
+    6. Generic Selectors
+    7. Footer
+    8. Media Queries
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    COLOR GUIDE
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    TYPOGRAPHY GUIDE
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Body: "Roboto Slab", Verdana;
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            1. PROJECT DETAILS
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Author: Jose Vargas, Daniel Masterson, Younji Woo
+    Project Name: La Paz Homeowners Association
+    Ver: 1.0
+    Last Updated: 06-07-2016
+    Notes:
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    2. CSS reset
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            3. Global Styles (tags, basic styling)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+body {
+    font-family: "Roboto Slab", Verdana;
+}
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    4. Header and Nav
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#container {
+    max-width: 100%;
+    margin: 0 1em;
+}
+#logo {
+    text-align: center;
+}
+#logo img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    padding-top: 1em;
+}
+#menuIcon { /* Hamburger menu */
+    position: fixed;
+    float: right;
+    z-index: 10;
+    top: 1em;
+    right: 1em;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+           Navigation Bar
++++++++++++++++++++++++++++++++++++*/
+
+#nav_ul {
+    float: inherit;
+    z-index: 7; /* rslide has 5 z-index */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .88;
+}
+#nav_ul li:first-child {
+    margin-top: 3%;
+}
+#nav_ul li a {
+    color: white;
+    text-align: center;
+}
+#nav_ul li a:hover {
+    color: deepskyblue;
+    text-align: center;
+}
+#nav_ul li #iamhere { /* This lets people know which page they are on & makes the tab look unavailable */
+    color: #666; 
+    cursor: default;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+           Hamburger Icon
++++++++++++++++++++++++++++++++++++*/
+
+.menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
+  transition: 250ms all;
+}
+
+.menu-opener {
+  background: #999;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: 40px;
+}
+.menu-opener:hover, .menu-opener.active {
+  background: #666;
+}
+
+.menu-opener-inner {
+  background: #fff;
+  height: .5rem;
+  margin-left: .75rem;
+  margin-top: 1.75rem;
+  width: 2.5rem;
+}
+.menu-opener-inner::before, .menu-opener-inner::after {
+  background: white;
+  content: '';
+  display: block;
+  height: .5rem;
+  width: 2.5rem;
+}
+.menu-opener-inner::before {
+  transform: translateY(-0.75rem);
+}
+.menu-opener-inner::after {
+  transform: translateY(0.25rem);
+}
+.menu-opener-inner.active {
+  background: transparent;
+}
+.menu-opener-inner.active::before {
+  transform: translateY(0rem) rotate(-45deg);
+}
+.menu-opener-inner.active::after {
+  transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
+}
+.hideIt {
+    display: none; /* you don't see the nav bar when you start/refresh the page. */
+}
+
+
+/*+++++++++++++++++++++++++++++++++++
+              Slide Show
++++++++++++++++++++++++++++++++++++*/
+#slideShow_container  {
+    max-width: 1200px;
+    margin: 1.5em auto;
+    z-index: 0; /* without this, drop-down menu goes behind the slide show */
+}
+.slideShow {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slideShow li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.slideShow li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.slideShow img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+#slideShow_container {
+    max-width: 1200px;
+    position: relative;
+}
+.rslides_tabs {
+    list-style-type: none;
+    position: absolute;
+    bottom:0;
+    left:41%;
+    z-index: 5;
+}
+.rslides_tabs li {
+    display: inline-block;
+    margin:0 2px 1px;
+}
+.rslides_tabs a {
+    color:#fff;
+    text-decoration: none;
+    width:10px;
+    height:10px;
+    border:solid 2px #fff;
+    background-color:#fff;
+    background-color:rgba(255,255,255,.8);
+    display: inline-block;
+    opacity: .7;
+    margin: .3em;
+    text-indent: -9999px;
+    border-radius: 15px;
+}
+.rslides_here a {
+    background-color: deepskyblue;
+    opacity: 1;
+}
+
+/*------- next/previous buttons -------*/
+.rslides_nav {
+    text-decoration: none;
+    width:38px;
+    height: 61px;
+    background:url(../images/navArrows.png) no-repeat left top;
+    display: inline-block;
+    position: absolute;
+    top:36%;
+    z-index: 5;
+    text-indent: -9999px;
+    opacity: .4;
+}
+.rslides_nav.next {
+    right:0;
+    background-position: right top;
+}
+.rslides_nav:active {
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    5. Main and Body 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+header > h3 { /* affects every page */
+    text-align: center;
+    margin-top: 1em;
+}
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+              index.html
++++++++++++++++++++++++++++++++++++*/
+.iconWrapper {
+        text-align: center;
+        padding-bottom: 2em;
+    }
+.iconWrapper + p a {
+    text-decoration: none;
+}
+.iconWrapper + p a:hover {
+    color: black;
+}
+.columns {
+    padding: 0 .5em 1.5em .5em;
+    margin-bottom: 1.5em;
+    border-bottom: solid 3px #eee;
+}
+.columns:nth-child(3) {
+    border-bottom: none;
+}
+.columns img { /* phone, newsletter, location icons */
+    width: 25%;
+    max-width: 90px;
+    padding-bottom: .5em;
+}
+.columns a {
+    color: #608eaf;
+}
+.columns p {
+    margin: 0 auto;
+}
+a ~ h5 {
+    margin: 0px auto;
+}
+a ~ h5 a {
+    text-decoration: none;
+}
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+             HOA.html
++++++++++++++++++++++++++++++++++++*/
+#hoaHeader > h3 {
+    background: url(../images/photo1.jpg);
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+article h6 {
+    font-weight: bold;
+}
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+       condoPlans.html
++++++++++++++++++++++++++++++++++++*/
+#condoHeader > h3 {
+    background: url(../images/photo2.jpg);
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+table {
+    width: 100%; /* makes the table responsive */
+}
+th, td:not(:first-child) {
+    text-align: center;
+    
+}
+a > .pdfImg {
+    width: 1.3em;
+    height: auto;
+    margin-bottom: -5px;
+}
+td a {
+    color: #666;
+    text-decoration: none;
+}
+td a:visited {
+    color: #ccc;
+}
+td a:hover {
+    color: black;
+}
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+               FAQ.html
++++++++++++++++++++++++++++++++++++*/
+#faqHeader > h3 {
+    background: url(../images/photo3.jpg);
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+dl {
+    margin: 0; /* dl has a margin by default */
+}
+.questionBox { /* This is the gray box */
+    margin: .5em 0 .5em 0;
+    display: block;
+    padding: 1em;
+    background-color: #666;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.questionBox:active {
+    background-color: black;/* We should change this depends on our color theme. */
+}
+dt + dd { /* This is the white box */
+    line-height: 1.6em;
+    margin: 0;
+    padding: 1em;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+            photos.html
++++++++++++++++++++++++++++++++++++*/
+
+#galleryHeader > h3 {
+    background: url(../images/photo4.jpg) top;
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+#galleryPics ul {
+    text-align: center;
+    list-style-type: none;
+}
+#galleryPics li {
+    display: inline-block;
+    font-size: .8em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+#galleryPics img {
+    width: 150px;
+    padding: 5px;
+    margin: 5px 5px 0;
+    border: solid 1px #999;
+    display: block; /* makes the captions next to the images. */
+}
+.jpegImg {
+    width: 25px;
+    height: auto;
+}
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+            trolleyInfo.html
++++++++++++++++++++++++++++++++++++*/
+#trolleyHeader > h3 {
+    background: url(../images/photo10.jpg);
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+            architectural.html
++++++++++++++++++++++++++++++++++++*/
+#archHeader > h3 {
+    background: url(../images/photo5.jpg) top;
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+           financials.html
++++++++++++++++++++++++++++++++++++*/
+#financialsHeader > h3 {
+    background: url(../images/photo6.jpg);
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+            forms.html
++++++++++++++++++++++++++++++++++++*/
+#formsHeader > h3 {
+    background: url(../images/photo7.jpg);
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+          governingDocs.html
++++++++++++++++++++++++++++++++++++*/
+#governHeader > h3 {
+    background: url(../images/photo8.jpg);
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+          minutesPage1-3.html
++++++++++++++++++++++++++++++++++++*/
+#minutesHeader > h3 {
+    background: url(../images/photo9.jpg);
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+          newsletters.html
++++++++++++++++++++++++++++++++++++*/
+#newsHeader > h3 {
+    background: url(../images/photo10.jpg);
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++
+          contact.html
++++++++++++++++++++++++++++++++++++*/
+
+/* Call Section (#callSection) */
+
+#callSection article {
+    padding: 3em 0;
+    border-bottom: solid 2px #eee;
+}
+#callSection article a {
+    white-space: nowrap;
+}
+#callSection #svcArticle {
+    border-top: solid 2px #eee;
+    padding-bottom: 2em;
+}
+#mgtArticle p {
+    margin-bottom: 0;
+}
+#contactMain a {
+    text-decoration: none;
+}
+#contactMain a:hover {
+    color: black;
+}
+#contactMain section li {
+    padding-bottom: 1em;
+}
+#contactMain section li:last-child {
+    padding-bottom: 0;
+}
+#contactMain section img { /* phone icon before phone numbers */
+    width: 20px;
+    margin-bottom: -5px;
+}
+#contactHeader > h3 {
+    background: url(../images/photo18.jpg) center;
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+#contactHeader + p {
+    font-size: .9em;
+    color: #666;
+    margin-bottom: 3em;
+}
+#contactHeader + p a {
+    font-style: normal;
+    margin: 0 .3em;
+}
+
+
+
+/*------ Forms ("Your Information")------*/
+
+
+#yourInfo legend { /* "Your Information" text */
+    padding: 3em 0 0;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+#yourInfo p { 
+    font-style: italic;
+    font-size: .8em;
+    text-align: right;
+    padding: 1.5em 2% 0 0;
+    margin-bottom: 0;
+}
+#yourInfo > ul { 
+    list-style-type: none;
+}
+fieldset { 
+    border:none;
+    margin: 0;
+    padding: 0;
+}
+#main_ul > li:first-child, #main_ul > li:nth-child(2), #main_ul > li:nth-child(3) {
+    margin-bottom: .5em;    
+}
+#main_ul > li:nth-child(5) {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+span.asterisk { /* red asterisks */
+    color: red;
+    font-weight: normal;
+}
+label.txtRight { /* Name, Phone, Email, Unite Number */
+    text-align: right;
+    float: left;
+    width: 30%;
+}
+.qLabel, .txtRight { /* bold texts */
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+input, textarea { /* All the boxes and buttons except submit btn */
+    background-color:#dceef8;
+    margin:0;
+    border:1px #999 solid; 
+    width: 70%;
+    display: inline-block;
+}
+input[type=radio], input[type=checkbox] { /* check boxes and radio btns */
+    width: auto;
+}
+.radioBtnSet li, .checkSet li  {
+    display: inline-block;
+    padding: .3em;
+}
+#form-contact li li label { /* radio and check button labels */
+    display: inline-block;
+    font-weight: normal;
+}
+#commentLabel { /* "Additional questions or comments" */
+    margin-top: 2em;
+}
+textarea#comment { /* Multiline text area */
+    display: block;
+    width: 100%;
+}
+button[type=submit] { /* Submit button */
+    background-color: #666;
+    color: white;
+    display: block;
+    margin: 3em auto;
+}
+button[type=submit]:hover {
+    background-color: deepskyblue;
+}
+
+/*+++++++++++++++++++++++++++++++++++
+            thankyou.html
++++++++++++++++++++++++++++++++++++*/
+#thanksHeader > h3 {
+    background: url(../images/photo5.jpg) bottom right;
+    padding: .5em;
+    opacity: .7;
+    color: white;
+    text-shadow: -1px 0 #666, 0 1px #666, 1px 0 #666, 0 -1px #666;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    6. Generic Selectors
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.clearIt {
+    clear: both;
+}
+p, dd, ul li {
+    line-height: 2.2;
+}
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                        7. Footer
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+footer {
+    padding: .7em;
+    font-size: .8em;
+    letter-spacing: .08em;
+    background: url(../images/pattern.jpg);
+    color: #666;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    8. Media Queries
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* We have 2 break points */
+
+
+
+@media screen and (min-width:600px) { /*-------- Larger than Mobile --------*/
+    #logo {
+        padding-bottom: 1.5em;
+    }
+    #nav_ul.fixedNav {
+        position: fixed;
+        top: 0;
+        left: auto;
+    }
+    #container { /* this contains everything except the footer */
+        max-width: 800px; /* sets max width for the page  */
+        padding: 0 1em;
+        margin: 0 auto;
+    }
+    #menuIcon {
+        display: none;
+    }
+    #nav_ul {
+        position: static;
+        width: auto;
+        height: auto;
+        display: block;
+        border: 1px solid #eee;
+        background: white;
+        opacity: 1;
+    }
+    #nav_ul li a {
+        color: #555;
+    }
+    #nav_ul li:first-child {
+        margin-top: 0;
+    }
+    #nav_ul li {
+        text-align: center;
+    }
+
+    #nav_ul > li:nth-child(1), #nav_ul > li:nth-child(2) {
+        width: 14%; /* makes "Home" and "HOA tab take less space, or else, "Property Info" and "Resources" tab overlap each other. */ 
+    }
+    #nav_ul > li:nth-child(3) {
+        width: 29.5%;  /* gives "Property Info" tab more space, or else, their letters and the arrow overlap each other. */
+    }
+    #nav_ul > li:nth-child(4) {
+        width: 25%; /* the width of all the <li>s is equal to 99%. */
+    }
+    #nav_ul > li:nth-child(5) {
+        width: 17.5%;
+    }
+    #nav_ul li #iamhere { /* This lets people know which page they are on & makes the tab look unavailable */
+    color: #eee; 
+    cursor: default;
+    }
+    #nav_ul #currentState { /* Blue underline bar. This lets people know under which menu tab you are */
+        height: 5px;
+        margin-top: 7px;
+        margin-bottom: -12px; /* minus height and margin-top */
+        display: block;
+        background-color: deepskyblue;
+    }    
+    span.sub-arrow { /* Little arrows next to "Property Info" and "Resources" tabs */
+        margin-right: 5%;
+    }
+    .hideArrow {
+        display: none;
+    } 
+        
+  .sm-clean > li > ul.pi:before,
+  .sm-clean > li > ul.pi:after {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 9px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #bbbbbb transparent;
+  }
+    .sm-clean > li > ul.pi:after {
+    top: -16px;
+    left: 50%;
+    border-width: 8px;
+    border-color: transparent transparent white transparent;
+  }
+  .sm-clean > li > ul.resources:before,
+  .sm-clean > li > ul.resources:after {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 38%;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 9px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #bbbbbb transparent;
+  }
+  .sm-clean > li > ul.resources:after {
+    top: -16px;
+    left: 38%;
+    border-width: 8px;
+    border-color: transparent transparent white transparent;
+  }
+    
+    
+/*+++++++++++++++++++++++++++++++++++
+      index.html (tablet ver.)
++++++++++++++++++++++++++++++++++++*/
+    .rslides_nav { /* prev, next button on slide show */
+        top: 42%;
+    }    
+    .iconWrapper img:hover {
+        transform: scale(1.1);
+    }
+    .columns {
+        border-bottom: none;
+    }
+    .columns:first-child {
+        border-right: solid 2px #eee;
+        margin-left: 0;
+    }
+    .columns:nth-child(2) {
+        margin-left: 0;
+    }
+    .columns:nth-child(3) {
+        border-left: solid 2px #eee;
+        margin: 0;
+    }    
+/*+++++++++++++++++++++++++++++++++++
+      contact.html (tablet ver.)
++++++++++++++++++++++++++++++++++++*/
+    label.txtRight { /* Name, Phone, Email, Unite Number */
+        width: 19%;
+    }
+    #yourInfo p {
+        padding: 1.5em 21% 0 0;
+    }
+    .txtRight ~ input { /* input next to "Name", "Phone", "Email", "Unit Number" */
+        width: 60%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:930px) { /*-------- Larger than desktop --------*/
+    
+    .sm-clean > li > ul.pi:before,
+    .sm-clean > li > ul.pi:after {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 9px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #bbbbbb transparent;
+  }
+    .sm-clean > li > ul.pi:after {
+    top: -16px;
+    left: 50%;
+    border-width: 8px;
+    border-color: transparent transparent white transparent;
+  }
+  .sm-clean > li > ul.resources:before,
+  .sm-clean > li > ul.resources:after {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 9px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #bbbbbb transparent;
+  }
+  .sm-clean > li > ul.resources:after {
+    top: -16px;
+    left: 50%;
+    border-width: 8px;
+    border-color: transparent transparent white transparent;
+  }
+ 
+/*+++++++++++++++++++++++++++++++++++
+      contact.html (desktop ver.)
++++++++++++++++++++++++++++++++++++*/
+    #callSection #svcArticle { /* "Services" */
+        display: inline-block;
+        float: left;
+        width: 45%;
+        padding: 0 2em;
+        border-top: none;
+        border-bottom: none;
+    }
+    #callSection #mgtArticle { /* "Kane Management" */
+        float: left;
+        width: 34%;
+        padding: 0 2em;
+        border-bottom: none;
+    }
+    #yourInfo p {
+        padding: 1.5em 27% 0 0;
+    }
+    label.txtRight { /* Name, Phone, Email, Unit Number */
+        width: 13%;   
+    }
+    .txtRight ~ input { /* input next to "Name", "Phone", "Email", "Unit Number" */
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

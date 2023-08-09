@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="La Paz HOA Homepage">
+    <meta name="keywords" content="La Paz, HOA, HOA website">
+    <meta name="author" content="Jose Vargas, Justin Tan, Younji Woo">
+
+    <title>La Paz Homeowners Association</title>
+
+    <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
+    <link href="styles/normalize.css" type="text/css" rel="stylesheet" /><!--Normalize-->
+    <link rel="stylesheet" href="styles/skeleton.css" /><!--Grid system-->
+   <link href='styles/smartmenu-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenu's core CSS (required) -->
+    <link href='styles/smartmenu-clean-style.css' rel='stylesheet' type='text/css' /><!-- SmartMenu's clean menu theme (optional)-->
+    <link href="styles/main.css" type="text/css" rel="stylesheet" /><!--General CSS-->
+
+
+
+
+</head>
+
+<body>
+    <div id="container">
+    <header>
+
+    <!-- Logo with the tree -->
+    <div id="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+    </div>
+
+    <!-- Hamburger icon at the upper right hand corner -->
+    <div class="menu-opener" id="menuIcon"><!-- from hamberger to X shape -->
+        <div class="menu-opener-inner"></div>
+    </div>
+
+    <nav><!-- Main menu (smart menu)-->
+        <ul id="nav_ul" class="sm sm-clean hideIt"> <!--"sm" and "sm-clean" are a plug-in called "smart menu" classes, "hideIt" makes the menu hidden on mobile version.-->
+            <li><a href="#">Home<span id="currentState"></span></a></li>
+            <li><a href="hoa.html">HOA</a></li>
+            <li id="pi_tab"><a href="#">Property Info</a>
+                <ul id="pi_ul" class="pi">
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="condoPlans.html">Condo Plans</a></li>
+                    <li><a href="trolleyInfo.html">Proposed Trolley Line Info</a></li>
+                </ul>
+            </li>
+            <li id="resources_tab"><a href="#">Resources</a>
+                <ul id="resources_ul" class="resources">
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="minutesPage1.html">Minutes</a></li>
+                    <li><a href="financials.html">Financials</a></li>
+                    <li><a href="governingDocs.html">Governing Docs</a></li>
+                    <li><a href="architectural.html">Architectural Info</a></li>
+                    <li><a href="newsletters.html">Newsletters</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="slideShow_container">
+    <ul class="slideShow">
+        <li><img src="images/photo1.jpg" alt="main gate"></li>
+        <li><img src="images/photo2.jpg" alt="pool area"></li>
+        <li><img src="images/photo3.jpg" alt="path"></li>
+        <li><img src="images/photo4.jpg" alt="tree"></li>
+    </ul>
+</div>
+
+ <section>
+
+
+    <div class="four columns"><!--from Skeleton's grid system-->
+        <div class="iconWrapper">
+            <a class="contact" href="contact.html"><img src="images/contact.png" alt="contact La Paz"></a>
+            <h5 class="service-heading"><a class="contact" href="contact.html">Contact</a></h5>
+        </div>
+        <p id="contact">Find important contact numbers and information for property management and other services. (e.g. tree care, lights, patrol, plumbing, landscaping, pool maintenance, trash pick-up services and etc.)</p>
+    </div>
+
+    <div class="four columns"><!--from Skeleton's grid system-->
+        <div class="iconWrapper">
+            <a class="location" href="https://www.google.com/maps/place/Porte+La+Paz,+San+Diego,+CA+92122/@32.8563524,-117.231139,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc012f63612011:0x2494b4d8fdf80a70!8m2!3d32.8563479!4d-117.2289503" target="_blank"><img src="images/location.png" alt="Information about property and its surroundings."></a>
+            <h5 class="service-heading"><a class="location" href="https://www.google.com/maps/place/Porte+La+Paz,+San+Diego,+CA+92122/@32.8563524,-117.231139,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc012f63612011:0x2494b4d8fdf80a70!8m2!3d32.8563479!4d-117.2289503" target="_blank">Location</a></h5>
+        </div>
+        <p id="location">Porte La Paz &amp; Rosenda Court<br />San Diego, CA 92122<br /><a class="location" href="https://www.google.com/maps/place/Porte+La+Paz,+San+Diego,+CA+92122/@32.8563524,-117.231139,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc012f63612011:0x2494b4d8fdf80a70!8m2!3d32.8563479!4d-117.2289503" target="_blank">Click here or the location icon to get directions on Google Maps.</a></p>
+    </div>
+    <div class="four columns"><!--from Skeleton's grid system-->
+        <div class="iconWrapper">
+            <a class="boardMeeting" href="https://www.google.com/maps/place/Doyle+Recreation+Center/@32.864597,-117.221063,15z/data=!4m2!3m1!1s0x0:0x941b3585c082258b?sa=X&ved=0ahUKEwjXoOavvI_NAhVDx2MKHSfEBDIQ_BIIdDAK" target="_blank"><img src="images/newsletter.png" alt="Forms and Newsletter for HOA"></a>
+            <h5 class="service-heading"><a class="boardMeeting" href="https://www.google.com/maps/place/Doyle+Recreation+Center/@32.864597,-117.221063,15z/data=!4m2!3m1!1s0x0:0x941b3585c082258b?sa=X&ved=0ahUKEwjXoOavvI_NAhVDx2MKHSfEBDIQ_BIIdDAK" target="_blank">Board Meeting</a></h5>
+        </div>
+        <p id="boardMeeting">The next board meeting is scheduled for <strong>June 8th, 2016</strong> at <strong>6 p.m.</strong> at <strong>Doyle Rec Center</strong> on Regents Rd. The trolley information begins at 6:30pm - <strong>only owners</strong> may attend. <a href="http://colonylapaz.com/2016minutes/2016_JuneAgenda.pdf" target="_blank">Click here to view agenda.</a></p>
+    </div>
+    <div class="clearIt"></div>
+
+</section><!--#centerMenu close-->
+
+</div><!--#container close-->
+
+<div class="clearIt"></div>
+
+<footer>Content &copy; 2008-2016, La Paz HOA</footer>
+
+    <!-- Here are all the script tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+    <script src="js/responsiveslides.min.js"></script><!--for Slide Show-->
+    <script src="js/jquery.smartmenus.min.js"></script><!--for smartmenus-->
+    <script src="js/slideshow.js"></script><!--for Slide show-->
+    <script src="js/navbar.js"></script><!--for nav bar-->
+
+</body>
+
+</html>

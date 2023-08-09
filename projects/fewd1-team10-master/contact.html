@@ -1,0 +1,260 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8" />
+    <!-- make sure they add this so that it actually is responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="La Paz HOA Contact Information">
+    <meta name="keywords" content="La Paz, Contact, HOA, Phone numbers">
+    <meta name="author" content="Jose Vargas, Justin Tan, Younji Woo">
+    
+    <title>Contact</title>
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!--Here are all the CSS links-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' /> <!--Google Font "Roboto Slab"-->
+    <link rel="stylesheet" href="styles/normalize.css" /><!--Normalize-->
+    <link rel="stylesheet" href="styles/skeleton.css" /><!--Grid system-->
+    <link href='styles/smartmenu-core-css.css' rel='stylesheet' type='text/css' /><!-- SmartMenu's core CSS (required) -->    
+    <link href='styles/smartmenu-clean-style.css' rel='stylesheet' type='text/css' /><!-- SmartMenu's clean menu theme (optional)-->
+    <link rel="stylesheet" href="styles/main.css" type="text/css" /><!--general CSS-->
+                     
+</head>
+    
+    
+<body>
+    
+<div id="container">    
+        
+<header>
+    <!-- Logo with the tree -->
+    <div id="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+    </div>
+    
+    <!-- Hamburger icon at the upper right hand corner -->
+    <div class="menu-opener" id="menuIcon">
+        <div class="menu-opener-inner"></div>
+    </div>
+
+    <nav><!-- Main menu (smart menu) -->
+        <ul id="nav_ul" class="sm sm-clean hideIt"> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hoa.html">HOA</a></li>
+            <li id="pi_tab"><a href="#">Property Info</a>
+                <ul id="pi_ul">
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="condoPlans.html">Condo Plans</a></li>
+                    <li><a href="trolleyInfo.html">Proposed Trolley Line Info</a></li>
+                </ul>
+            </li>
+            <li id="resources_tab"><a href="#">Resources</a>
+                <ul id="forms_ul">
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="minutesPage1.html">Minutes</a></li>
+                    <li><a href="financials.html">Financials</a></li>
+                    <li><a href="governingDocs.html">Governing Docs</a></li>
+                    <li><a href="architectural.html">Architectural Info</a></li>
+                    <li><a href="newsletters.html">Newsletters</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact<span id="currentState"></span></a></li>
+        </ul>
+    </nav>
+
+</header>
+        
+        
+<main id="contactMain">
+    <header id="contactHeader">
+        <h3>Contact Us</h3>
+    </header>
+    
+    <p>Before filling out this contact form, please consider visiting our <a href="FAQ.html">frequently asked questions (FAQ)</a> page.</p>
+    
+    <section id="callSection">
+        
+        <article id="svcArticle">
+            <h5>Services</h5>
+            <ul>
+                <li>Termites / Bugs / Rodents: <a href="tel:18006968565"><img src="images/phone.png" alt="phone" /> (800) 696 - 8565</a></li>
+
+                <li>Lights &amp; Minor Repairs: <a href="tel:17604070250"><img src="images/phone.png" alt="phone" /> (760) 407 - 0250</a></li>
+
+                <li>Pool Maintenance: <a href="tel:17604070250"><img src="images/phone.png" alt="phone" /> (760) 407 - 0250</a></li>
+
+                <li>Tree Care and Trimming: <a href="tel:16192358312"><img src="images/phone.png" alt="phone" /> (619) 235 - 8312</a></li>
+
+                <li>Trash Pickup: <a href="tel:18582786061"><img src="images/phone.png" alt="phone" /> (858) 278 - 6061</a></li>
+
+                <li>Landscape and Irrigation: <a href="tel:18585497611"><img src="images/phone.png" alt="phone" /> (858) 549 - 7611</a></li>
+
+                <li>Post Office Sub-Station: <a href="tel:18002758777"><img src="images/phone.png" alt="phone" /> (800) 275 - 8777</a></li>
+
+                <li>Plumbing: <a href="tel:18585667992"><img src="images/phone.png" alt="phone" /> (858) 566 - 7992</a></li>
+
+                <li>Patrol Service: <a href="tel:18882941200"><img src="images/phone.png" alt="phone" /> (888) 294 - 1200</a></li>
+
+                <li>Insurance: <a href="tel:19494947261"><img src="images/phone.png" alt="phone" /> (949) 494 - 7261</a></li>
+
+            </ul>
+        </article>
+        
+        <article id="mgtArticle">
+            <h5>Kane Management</h5>
+            <p><a href="mailto:audrey@kanemgt.com">audrey@kanemgt.com</a><br />
+            Streets: Porte La Paz &amp; Rosenda Court<br />
+            <a href="tel:18585511885">
+                <img src="images/phone.png" alt="phone" /> (858) 551-1885
+            </a></p>
+        </article>
+        
+    </section><!--end #callSection-->
+    
+    <div class="clearIt"></div>
+    
+    
+    <!-- form -->
+    <form id="form-contact" action="form-parser.php" method="post" autocomplete="on">
+
+    
+
+        <fieldset id="yourInfo">
+            <legend>Your information</legend>
+            <p><span class="asterisk">*</span> indicates required field.</p>
+            <ul id="main_ul">
+                <li>
+                    <label class="txtRight" for="name">Name <span class="asterisk">*</span>&nbsp;</label>
+                    <input type="text" name="name" id="name" title="Name" placeholder="John Doe" required pattern="[a-zA-Z ]+" />
+                </li>
+                <li>
+                    <label class="txtRight" for="phone">Phone <span class="asterisk">*</span>&nbsp;</label>
+                    <input type="tel" name="phone" id="phone" title="Phone" placeholder="phone number" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+                </li>
+                <li>
+                    <label class="txtRight" for="email">Email <span class="asterisk">*</span>&nbsp;</label>
+                    <input type="email" name="email" id="email" title="Email" placeholder="name@domain.com" required />
+                </li>
+                <li>
+                    <label class="txtRight" for="unit">Unit Number&nbsp;&nbsp;&nbsp;</label>
+                    <input type="number" name="unit" id="unit" title="unit Number" placeholder="unit number" />
+                </li>
+                <li>
+                    <label class="qLabel">How should we direct your questions?</label>
+                    <ol class="radioBtnSet">
+                        <li>
+                            <input type="radio" name="directTo" id="generalInfo" value="gen" />
+                            <label for="generalInfo">&nbsp;General Information</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="directTo" id="HOA" value="hoa" />
+                            <label for="HOA">&nbsp;HOA Services/Issues</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="directTo" id="landProp" value="land" />
+                            <label for="landProp">&nbsp;Land and Property</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="directTo" id="maintDev" value="maint" />
+                            <label for="maintDev">&nbsp;Maintenance and Developments</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="directTo" id="other" value="other" />
+                            <label for="other">&nbsp;Other</label>
+                            <input type="text" name="directTo" id="box" title="otherOptions" pattern="\d{1,4}" />
+                        </li>
+                    </ol><!-- end of .radioBtnSet -->
+                </li><!-- end of "How should we direct your question?" -->
+                
+                <li>
+                    <label class="qLabel">How are you connected to La Paz HOA?</label>
+                    <ol class="checkSet">
+                        <li>
+                            <input type="checkbox" name="connectedTo" id="hoaBoard" value="HOA board member" />
+                            <label for="hoaBoard">&nbsp;I am an HOA board member.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="connectedTo" id="aHomeowner"  value="Homeowner" />
+                            <label for="aHomeowner">&nbsp;I am a homeowner at La Paz.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="connectedTo" id="aRenter"  value="Renter" />
+                            <label for="aRenter">&nbsp;I am a renter at La Paz.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="connectedTo" id="aContractor"  value="Contractor" />
+                            <label for="aContractor">&nbsp;I am a contractor at La Paz.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="connectedTo" id="aSolicitor"  value="Solicitor" />
+                            <label for="aSolicitor">&nbsp;I am a solicitor.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="connectedTo" id="anRenter"  value="Interested Renter" />
+                            <label for="anRenter">&nbsp;I am an interested renter.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="connectedTo" id="anBuyer"  value="Interested Buyer" />
+                            <label for="anBuyer">&nbsp;I am an interested buyer.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="connectedTo" id="noConnection"  value="No Connection" />
+                            <label for="noConnection">&nbsp;I have no connection in any way.</label>
+                        </li>
+                    </ol><!-- end of .checkSet -->
+                </li><!-- end of "How are you connected to La Paz HOA?" -->
+                
+                <li>
+                    <label class="qLabel" for="contactTo">Who would you like to contact?&nbsp;</label>
+                    <select name="contact" id="contactTo">
+                        <option hidden="hidden" >Choose:</option>
+                        <option value="Any HOA board member">Any HOA board member.</option>
+                        <option value="Any homeowner">Any homeowner.</option>
+                        <option value="Administrative staff">Administrative staff.</option>
+                        <option value="Maintenance staff">Maintenance staff.</option>
+                        <option value="Specific individual">Specific individual.</option>
+                        <option value="Agent recommendation">Agent recommendation.</option>
+                        <option value="Bueller Bueller Bueller">Anybody.</option>
+                    </select>
+                </li><!--end of "Who would you like to contact?"-->
+              
+                <li>
+                    <label class="qLabel" id="commentLabel" for="comment">Additional questions or comments :</label>
+                    <textarea name="comment" id="comment" class="longText"></textarea>
+                </li><!-- end of "Additional questions or comments" -->
+                
+            </ul><!-- end of the form -->
+        </fieldset><!-- end of #yourInfo -->
+    
+        <button type="submit">Submit</button>
+    </form><!-- end form -->
+    
+
+
+
+
+</main>
+    
+        
+    </div> <!--#container close-->
+
+    <div class="clearIt"></div>
+    <footer>Content &copy; 2008-2016, La Paz HOA</footer>
+
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script><!--for Smart Menus-->
+    <script src="js/jquery.smartmenus.min.js"></script><!--for Smart Menus-->
+    <script src="js/navbar.js"></script><!--for Smart Menus-->
+   
+        
+
+    
+</body>
+    
+</html>
