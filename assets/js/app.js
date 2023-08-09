@@ -44,7 +44,7 @@ let projects = [
     // },
     {
         projectName: "HOA Website",
-        url: "https://fewd1-team10.github.io/",
+        url: "https://younjiwoo.github.io/projects/fewd1-team10-master",
         image: "images/hoaWebsite.png",
         description: "A re-design of my previous HOA's website."
     }
