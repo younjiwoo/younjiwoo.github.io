@@ -1,10 +1,16 @@
 let projects = [
     {
-      projectName: "KeyDR",
-      url: "https://keydr.herokuapp.com/",
-      image: "https://media.giphy.com/media/QyhVtIfjpDI8SYK45z/giphy.gif",
-      description: "KeyDR is a musical game. User has to press the keys that match the notes coming down the screen."
+      projectName: "Japanese Language App",
+      url: "https://japanese-language-app.netlify.app/",
+      image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDZhdHVyb3doa3ZjNWRmeHBkZ2gycnF5eHl6NzhjMnA2d201MTd4biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U7pbxDKMwx1MRh6yO3/giphy.gif",
+      description: "Japanese Language App is a game to learn basic Japanese words and characters."
     },
+    // {
+    //   projectName: "KeyDR",
+    //   url: "https://keydr.herokuapp.com/",
+    //   image: "https://media.giphy.com/media/QyhVtIfjpDI8SYK45z/giphy.gif",
+    //   description: "KeyDR is a musical game. User has to press the keys that match the notes coming down the screen."
+    // },
     {
         projectName: "Random Meal Generator",
         url: "https://everyday-random-meal-generator.netlify.app/",
