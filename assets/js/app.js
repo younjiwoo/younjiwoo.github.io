@@ -2,7 +2,7 @@ let projects = [
     {
       projectName: "Japanese Language App",
       url: "https://japanese-language-app.netlify.app/",
-      image: "images/japaneseLangApp.png",
+      image: "images/japaneseLangApp.jpg",
       description: "Japanese Language App is a game to learn basic Japanese words and characters."
     },
     // {
